@@ -22,16 +22,10 @@ main{
 }
 
 .razval{
-    background-color: rgb(255, 205, 214);
     padding: 20px 10px;
     height: 100vh;
 }
 
 .cast{
-    background-color: lemonchiffon;
     height: 110vh;
-}
-
-.sxozh{
-    background-color: palegreen;
 }

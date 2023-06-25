@@ -11,62 +11,66 @@
 <body>
     <main>
         <div class="razval">
-            <h1>1. Развал</h1>
+            <h1 class="header">Развал</h1>
             <div class="form">
-                <span>A - от верха диска до отвеса</span>
-                <input type="number" placeholder="мм." id="cam_a">
-                <span>мм.</span>
-                <br>
-                <br>
-                <span>B - от низа диска до отвеса</span>
-                <input type="number" placeholder="мм." id="cam_b">
-                <span>мм.</span>
-                <br>
-                <br>
-                <span>C -  диаметр диска</span>
-                <input type="number" placeholder="мм." id="cam_c">
-                <span>мм.</span>
-                <br>
-                <br>
-                <button onclick="camber()">GO!</button>
+                <div class="br">
+                    <span>A - от верха диска до отвеса</span>
+                    <input type="number" placeholder="мм." id="cam_a">
+                    <span>мм.</span>
+                </div>
+                <div class="br">
+                    <span>B - от низа диска до отвеса</span>
+                    <input type="number" placeholder="мм." id="cam_b">
+                    <span>мм.</span>
+                </div>
+                <div class="br">
+                    <span>C -  диаметр диска</span>
+                    <input type="number" placeholder="мм." id="cam_c">
+                    <span>мм.</span>
+                </div>
             </div>
-            <p><b>Результат: <span id="cam_res">None</span>°</b></p>
+            <button onclick="camber()" class="but">РАССЧИТАТЬ</button>
+            <p class="res"><b><span id="cam_res"></span>°</b></p>
         </div>
         <hr>
-        <div class="razval cast">
-            <h1>2. Кастер</h1>
+        <div class="cast">
+            <h1 class="header">Кастер</h1>
             <div class="form">
-                <span>C -  диаметр диска</span>
-                <input type="number" placeholder="мм." id="cas_c">
-                <span>мм.</span>
-                <br>
-                <br>
-                <span>Угол поворота колеса</span>
-                <input type="number" placeholder="°" id="cas_x">
-                <span>°</span>
+                <div class="br">
+                    <span>C -  диаметр диска</span>
+                    <input type="number" placeholder="мм." id="cas_c">
+                    <span>мм.</span>
+                </div>
+                <div class="br">
+                    <span>Угол поворота колеса</span>
+                    <input type="number" placeholder="°" id="cas_x">
+                    <span>°</span>
+                </div>
                 <h4>R1:</h4>
-                <span>A - от верха диска до отвеса</span>
-                <input type="number" placeholder="мм." id="cas_a1">
-                <span>мм.</span>
-                <br>
-                <br>
-                <span>B - от низа диска до отвеса</span>
-                <input type="number" placeholder="мм." id="cas_b1">
-                <span>мм.</span>
+                <div class="br">
+                    <span>A - от верха диска до отвеса</span>
+                    <input type="number" placeholder="мм." id="cas_a1">
+                    <span>мм.</span>
+                </div>
+                <div class="br">
+                    <span>B - от низа диска до отвеса</span>
+                    <input type="number" placeholder="мм." id="cas_b1">
+                    <span>мм.</span>
+                </div>
                 <h4>R2:</h4>
-                <span>A - от верха диска до отвеса</span>
-                <input type="number" placeholder="мм." id="cas_a2">
-                <span>мм.</span>
-                <br>
-                <br>
-                <span>B - от низа диска до отвеса</span>
-                <input type="number" placeholder="мм." id="cas_b2">
-                <span>мм.</span>
-                <br>
-                <br>
-                <button onclick="caster()">GO!</button>
+                <div class="br">
+                    <span>A - от верха диска до отвеса</span>
+                    <input type="number" placeholder="мм." id="cas_a2">
+                    <span>мм.</span>                
+                </div>
+                <div class="br">
+                    <span>B - от низа диска до отвеса</span>
+                    <input type="number" placeholder="мм." id="cas_b2">
+                    <span>мм.</span>
+                </div>
             </div>
-            <p><b>Результат: <span id="cas_res">None</span>°</b></p>
+            <button onclick="caster()" class="but">РАССЧИТАТЬ</button>
+            <p class="res"><b><span id="cas_res"></span>°</b></p>
         </div>
     </main>
 </body>

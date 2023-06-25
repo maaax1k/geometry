@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+main{
+    width: 99%;
+    margin: auto;
+}
+
+.form input{
+    width: 3rem;
+
+}
+
+.form button{
+    width: 80%;
+    margin: 10px auto;
+    height: 3rem;
+    font-size: 1.8rem;
+}
+
+.razval{
+    background-color: rgb(255, 205, 214);
+    padding: 20px 10px;
+    height: 100vh;
+}
+
+.cast{
+    background-color: lemonchiffon;
+}
+
+.sxozh{
+    background-color: palegreen;
+}

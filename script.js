@@ -3,7 +3,7 @@ function camber(){
     var A = Number(document.getElementById("cam_a").value);
     var B = Number(document.getElementById("cam_b").value);
     var C = Number(document.getElementById("cam_c").value);
-    result = Math.asin((B-A)/C);
+    result = Math.round((Math.asin((B-A)/C) * 180/Math.PI)*100)/100;
     document.getElementById("cam_res").innerHTML = result;
 }
 
@@ -12,12 +12,12 @@ function caster(){
     var C = Number(document.getElementById("cas_c").value);
     var a1 = Number(document.getElementById("cas_a1").value);
     var b1 = Number(document.getElementById("cas_b1").value);
-    var x = Number(document.getElementById("cas_x").value);
+    var x = Number(document.getElementById("cas_x").value) * Math.PI/180;
     var R1 = b1-a1;
     var a2 = Number(document.getElementById("cas_a2").value);
     var b2 = Number(document.getElementById("cas_b2").value);
     var R2 = b2-a2;
     var b = (Math.asin(R1/C)-Math.asin(R2/C))/2;
-    result = Math.atan(Math.tan(b)/Math.sin(x));
+    result = Math.round(((Math.atan(Math.tan(b)/Math.sin(x))) * 180/Math.PI)*100)/100;
     document.getElementById("cas_res").innerHTML = result;
 }
